@@ -6,7 +6,7 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-local bot_api_key = " :/ " --BOT TOKEN 舒 樹 讶鞘 捂� 亚 涎 琼涮� 扪茄 襄硐
+local bot_api_key = "269798448:AAGeDTm3NExmH8mkeiFETNz05G8wbir0500" --BOT TOKEN 舒 樹 讶鞘 捂� 亚 涎 琼涮� 扪茄 襄硐
 local You = 149228796 --ID ADMIN 琼享 捂� 亚 琼涮� 扪茄 襄硐
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
@@ -16,22 +16,15 @@ local start = [[ ]]
 local help = [[
 ???????????
 *commands:*`for admin`
-`/ban` ??
-蠕 樠箱 順 晕�
-`/unban` ??
-卿 蠕 樠箱 順 晕�
-`/users` ??
-授锨� 樓讶亚�
-`/broadcast` ??
-匝孚 來倾 邈惽漤
-`/unbroadcast` ??
-伹砬� 茄忧� 來倾 邈惽漤
-`/start` ??
-匝孚
-`/id` ??
-琼享
-???????????
-*Shervin Sheriff* `!`
+`/ban` 
+`/unban`
+`/users`
+`/broadcast`
+`/unbroadcast`
+`/start` 
+`/id`
+
+*by Shervin Sheriff* `!`
 ]]--
 -------
 ----utilites----
@@ -296,7 +289,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "Hi ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[Call to owner](http://Telegram.me/hacker_unknown)"
+local text = "Hi  ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[Call to owner 💠](http://Telegram.me/hacker_unknown)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif msg.text == "/start" and is_add(msg) then
 print(#add.id)
